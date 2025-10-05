@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio | Nexus Future</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Tilt.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-atom"></i>
+                    NEXUS
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid -->
+    <section id="page-portfolio-grid" class="page-section">
+       <div class="page-header">
+            <h1 class="page-title">Our Portfolio</h1>
+            <p class="page-subtitle">Explore our groundbreaking projects that are shaping the future of technology across various industries and applications.</p>
+        </div>
+        <div class="container">
+            <div class="page-portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="ai" data-aos="fade-up" data-aos-delay="0">
+                    <img src="public\programming-background-with-person-working-with-codes-computer.jpg" alt="Quantum Finance Platform">
+                    <div class="portfolio-overlay">
+                        <h3>Quantum Finance Platform</h3>
+                        <p>Revolutionary financial platform leveraging quantum computing for real-time risk analysis and portfolio optimization.</p>
+                        <div class="project-tech" style="margin: 15px 0;">
+                            <span class="tech-tag">Quantum Computing</span>
+                            <span class="tech-tag">AI</span>
+                            <span class="tech-tag">Blockchain</span>
+                        </div>
+                        <a href="#" class="btn" style="margin-top: 15px;">View Case Study</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="xr" data-aos="fade-up" data-aos-delay="100">
+                    <img src="public\cyberpunk-illustration-with-neon-colors-futuristic-technology.jpg" alt="Neural Interface">
+                    <div class="portfolio-overlay">
+                        <h3>Neural Interface System</h3>
+                        <p>Brain-computer interface that enables direct neural control of digital systems for medical and industrial applications.</p>
+                        <div class="project-tech" style="margin: 15px 0;">
+                            <span class="tech-tag">Neural Networks</span>
+                            <span class="tech-tag">Bio-sensors</span>
+                            <span class="tech-tag">AI</span>
+                        </div>
+                        <a href="#" class="btn" style="margin-top: 15px;">View Case Study</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="xr" data-aos="fade-up" data-aos-delay="200">
+                    <img src="public\person-using-ar-technology-perform-their-occupation.png" alt="Holographic Display">
+                    <div class="portfolio-overlay">
+                        <h3>Holographic Display System</h3>
+                        <p>Advanced holographic technology for immersive visual experiences without special glasses or headsets.</p>
+                        <div class="project-tech" style="margin: 15px 0;">
+                            <span class="tech-tag">Holography</span>
+                            <span class="tech-tag">Optics</span>
+                            <span class="tech-tag">Spatial Computing</span>
+                        </div>
+                        <a href="#" class="btn" style="margin-top: 15px;">View Case Study</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="security" data-aos="fade-up" data-aos-delay="300">
+                    <img src="public\b88c868f-4675-43fe-a8d4-c0e506145bea.jpg" alt="Quantum Cryptography">
+                    <div class="portfolio-overlay">
+                        <h3>Quantum Cryptography Network</h3>
+                        <p>Unbreakable encryption system using quantum key distribution for secure government and financial communications.</p>
+                        <div class="project-tech" style="margin: 15px 0;">
+                            <span class="tech-tag">Quantum Cryptography</span>
+                            <span class="tech-tag">Network Security</span>
+                            <span class="tech-tag">Encryption</span>
+                        </div>
+                        <a href="#" class="btn" style="margin-top: 15px;">View Case Study</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="iot" data-aos="fade-up" data-aos-delay="400">
+                    <img src="public\2308941.jpg" alt="Smart City IoT">
+                    <div class="portfolio-overlay">
+                        <h3>Smart City IoT Platform</h3>
+                        <p>Comprehensive IoT ecosystem for urban management, including traffic optimization, energy management, and public safety.</p>
+                        <div class="project-tech" style="margin: 15px 0;">
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Edge Computing</span>
+                            <span class="tech-tag">AI Analytics</span>
+                        </div>
+                        <a href="#" class="btn" style="margin-top: 15px;">View Case Study</a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="ai" data-aos="fade-up" data-aos-delay="500">
+                    <img src="public\images-that-simulate-x-rays-with-neon-colors.jpg" alt="AI Healthcare">
+                    <div class="portfolio-overlay">
+                        <h3>AI-Powered Healthcare Diagnostics</h3>
+                        <p>Advanced medical imaging analysis using deep learning for early disease detection and personalized treatment plans.</p>
+                        <div class="project-tech" style="margin: 15px 0;">
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Healthcare</span>
+                        </div>
+                        <a href="#" class="btn" style="margin-top: 15px;">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Statistics -->
+    <section id="project-stats" class="particles-section page-section">
+        <div id="particles-js"></div>
+        <div class="container">
+            <h2 class="section-title">Project Impact</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>87% Efficiency Gain</h3>
+                    <p>Average improvement in operational efficiency across our client projects through AI and automation.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>$2.3B Value Created</h3>
+                    <p>Total economic value generated for our clients through technology implementation and optimization.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>15M+ Users Impacted</h3>
+                    <p>Number of end-users positively affected by the technologies and systems we've developed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section id="testimonials" class="page-section">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Nexus Future transformed our financial modeling capabilities with their quantum computing solution. What used to take weeks now happens in minutes."</p>
+                    <h3>Sarah Johnson</h3>
+                    <p>CTO, Global Financial Services</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"The neural interface system developed by Nexus Future has revolutionized our medical rehabilitation programs, helping patients recover motor functions faster."</p>
+                    <h3>Dr. Michael Chen</h3>
+                    <p>Director, Advanced Medical Research Institute</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Working with Nexus Future on our smart city initiative was transformative. Their IoT platform has improved urban services while reducing operational costs by 40%."</p>
+                    <h3>Maria Rodriguez</h3>
+                    <p>City Innovation Officer, Metropolitan Government</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Universal CTA Section -->
+<section class="universal-cta particles-section">
+    <div id="particles-js-universal-cta"></div>
+    <div class="container">
+        <div class="cta-content">
+            <h2 data-aos="fade-up">Have a Project in Mind?</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Let's discuss how we can bring your vision to life with cutting-edge technology and innovative solutions.</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="contact.html" class="cta-btn cta-primary">Start Your Project</a>
+                <a href="services.html" class="cta-btn cta-secondary">Our Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-atom"></i>
+                        NEXUS
+                    </a>
+                    <p>Pioneering the future of technology with innovative solutions that transform businesses and enhance human experiences.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">AI Solutions</a></li>
+                        <li><a href="services.html">Cyber Security</a></li>
+                        <li><a href="services.html">Quantum Computing</a></li>
+                        <li><a href="services.html">Immersive Reality</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Future Street, Tech City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@nexusfuture.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Nexus Future. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

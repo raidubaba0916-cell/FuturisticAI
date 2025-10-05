@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | Nexus Future</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Tilt.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-atom"></i>
+                    NEXUS
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="team.html" class="active">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Leadership Team -->
+    <section id="leadership" class="page-section">
+        <div class="page-header">
+            <h1 class="page-title">Meet Our Team</h1>
+            <p class="page-subtitle">Visionaries, innovators, and experts working together to shape the future of technology and create transformative solutions.</p>
+        </div><div class="container">
+            <h2 class="section-title">Leadership Team</h2>
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="0">
+                    <div class="member-img">
+                        <img src="assets\Alex-512.webp" alt="Alex Morgan">
+                    </div>
+                    <h3>Alex Morgan</h3>
+                    <p class="position">Chief Executive Officer</p>
+                    <p>Visionary leader with 15+ years in tech innovation and business strategy. Former Head of Innovation at TechGlobal.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-link" style="width: 35px; height: 35px;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" style="width: 35px; height: 35px;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="assets\Sara-512.webp" alt="Dr. Sarah Chen">
+                    </div>
+                    <h3>Dr. Sarah Chen</h3>
+                    <p class="position">Chief Technology Officer</p>
+                    <p>Quantum computing expert and AI researcher with PhD from MIT. Published author in multiple scientific journals.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-link" style="width: 35px; height: 35px;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" style="width: 35px; height: 35px;"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-img">
+                        <img src="assets\Marcus-512.webp" alt="Marcus Johnson">
+                    </div>
+                    <h3>Marcus Johnson</h3>
+                    <p class="position">Creative Director</p>
+                    <p>Award-winning designer pushing the boundaries of digital design and user experience for over 12 years.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-link" style="width: 35px; height: 35px;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" style="width: 35px; height: 35px;"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Team -->
+    <section id="technical-team" class="particles-section page-section">
+        <div id="particles-js"></div>
+        <div class="container">
+            <h2 class="section-title">Technical Experts</h2>
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="0">
+                    <div class="member-img">
+                        <img src="assets\Maria-512.webp" alt="Dr. Maria Rodriguez">
+                    </div>
+                    <h3>Dr. Maria Rodriguez</h3>
+                    <p class="position">Lead Quantum Scientist</p>
+                    <p>Specialized in quantum algorithms and their applications in optimization and machine learning.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-link" style="width: 35px; height: 35px;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" style="width: 35px; height: 35px;"><i class="fab fa-researchgate"></i></a>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="assets\Liza-512.webp" alt="Lisa Thompson">
+                    </div>
+                    <h3>Lisa Thompson</h3>
+                    <p class="position">AI Research Lead</p>
+                    <p>Expert in neural networks and natural language processing with focus on ethical AI development.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-link" style="width: 35px; height: 35px;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" style="width: 35px; height: 35px;"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-img">
+                        <img src="assets\James-512.webp" alt="James Wilson">
+                    </div>
+                    <h3>James Wilson</h3>
+                    <p class="position">Cyber Security Architect</p>
+                    <p>Specialized in quantum-resistant cryptography and advanced threat detection systems.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-link" style="width: 35px; height: 35px;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" style="width: 35px; height: 35px;"><i class="fab fa-keybase"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Stats -->
+    <section id="team-stats" class="page-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>85% PhD Holders</h3>
+                    <p>Our technical team consists primarily of doctorate-level researchers and scientists.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>15 Countries</h3>
+                    <p>Our diverse team brings perspectives from across the globe, enhancing innovation.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>50+ Awards</h3>
+                    <p>Recognition from leading technology and innovation organizations worldwide.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>200+ Publications</h3>
+                    <p>Our team regularly contributes to scientific journals and industry publications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="particles-section page-section">
+                <div class="container">
+            <h2 class="section-title">Our Culture</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Innovation Through Collaboration</h3>
+                    <p>At Nexus Future, we believe that the most groundbreaking innovations happen at the intersection of diverse perspectives and expertise. Our culture fosters collaboration, continuous learning, and bold experimentation.</p>
+                    <p>We maintain a flat organizational structure where every team member's voice is valued, and ideas can come from anywhere. Our weekly innovation sessions and cross-disciplinary projects ensure we're always pushing boundaries.</p>
+                    <div class="culture-points" style="margin-top: 20px;">
+                        <div class="culture-point" style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i>
+                            <span>Weekly innovation workshops and hackathons</span>
+                        </div>
+                        <div class="culture-point" style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i>
+                            <span>Flexible work arrangements and remote options</span>
+                        </div>
+                        <div class="culture-point" style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i>
+                            <span>Continuous learning and professional development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left" data-aos-delay="200">
+                    <img src="public\rendering-anime-doctors-work.jpg" alt="Team Culture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Universal CTA Section -->
+<section class="universal-cta particles-section">
+    <div id="particles-js-universal-cta"></div>
+    <div class="container">
+        <div class="cta-content">
+            <h2 data-aos="fade-up">Join Our Team</h2>
+            <p data-aos="fade-up" data-aos-delay="100">We're always looking for brilliant minds passionate about shaping the future of technology.</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="contact.html" class="cta-btn cta-primary">View Open Positions</a>
+                <a href="contact.html" class="cta-btn cta-secondary">Send Your CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-atom"></i>
+                        NEXUS
+                    </a>
+                    <p>Pioneering the future of technology with innovative solutions that transform businesses and enhance human experiences.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Departments</h3>
+                    <ul>
+                        <li><a href="team.html">Leadership</a></li>
+                        <li><a href="team.html">Research & Development</a></li>
+                        <li><a href="team.html">Engineering</a></li>
+                        <li><a href="team.html">Design</a></li>
+                        <li><a href="team.html">Operations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Future Street, Tech City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@nexusfuture.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Nexus Future. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

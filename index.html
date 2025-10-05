@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Future | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Tilt.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-atom"></i>
+                    NEXUS
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Enhanced Hero Section -->
+    <section class="hero" id="home">
+        <!-- Background Options (Hidden for now)
+        <video autoplay muted loop class="hero-bg-video">
+            <source src="assets/TRAVEL VIDEO FOR INSPIRATION.mp4" type="video/mp4">
+        </video>
+        <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+             alt="Futuristic Background" class="hero-bg-image" style="display: none;"> -->
+        <div class="hero-gradient-overlay"></div>
+    <!-- Add this in your hero section -->
+<div class="hero-graphics">
+   <img src="assets/Asset 6.svg" class="hero-graphic" alt="Futuristic Element">
+</div>
+        <!-- Subtle Three.js Background with Round Particles -->
+        <div id="three-canvas" class="three-elements"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to the <span class="typed-text"></span></h1>
+                <p>We are pioneering the next generation of digital innovation. Our cutting-edge
+                    solutions advanced technology with visionary design to create experiences that
+                    transcend expectations.</p>
+                <div class="hero-btns">
+                    <a href="about.html" class="btn">Explore More</a>
+                    <a href="contact.html" class="btn" style="background: transparent; border: 2px solid var(--primary);">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="particles-section compact-section">
+        <div id="particles-js"></div>
+        <div class="container">
+            <h2 class="section-title">Cutting-Edge Features</h2>
+            <p class="section-subtitle">Discover our innovative solutions that are shaping the future of technology</p>
+            <div class="features-grid">
+                <div class="feature-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Integration</h3>
+                    <p>Harness the power of artificial intelligence to automate processes and deliver personalized experiences.</p>
+                </div>
+                <div class="feature-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Quantum Computing</h3>
+                    <p>Leverage quantum algorithms to solve complex problems at unprecedented speeds.</p>
+                </div>
+                <div class="feature-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                    <div class="feature-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>Immersive Reality</h3>
+                    <p>Create breathtaking virtual and augmented reality experiences that blur the lines between digital and physical.</p>
+                </div>
+                <div class="feature-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Advanced Security</h3>
+                    <p>Multi-layered security protocols to protect your data and systems from emerging threats.</p>
+                </div>
+                <div class="feature-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Performance</h3>
+                    <p>Optimized solutions that deliver exceptional speed and reliability for mission-critical applications.</p>
+                </div>
+                <div class="feature-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                    <div class="feature-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Scalable Architecture</h3>
+                    <p>Future-proof systems designed to grow with your business and adapt to changing demands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section id="about-preview" class="compact-section">
+        <div class="container">
+            <h2 class="section-title">About Nexus Future</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Pioneering Tomorrow's Technology Today</h3>
+                    <p>Founded in 2025, Nexus Future is at the forefront of technological innovation. Our team of visionaries, engineers, and designers work collaboratively to push the boundaries of what's possible.</p>
+                    <p>We believe in a future where technology enhances human potential without compromising our humanity. Our solutions are designed to be ethical, sustainable, and transformative.</p>
+                    <a href="about.html" class="btn">Learn More</a>
+                </div>
+                <div class="about-image" data-aos="fade-left" data-aos-delay="200">
+                    <img src="public\futuristic-business-scene-with-ultra-modern-ambiance.jpg" alt="About Nexus Future">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+     <section id="services-preview" class="particles-section compact-section">
+                         <div class="container">
+            <h2 class="section-title">Our Core Services</h2>
+            <p class="section-subtitle">Comprehensive technology solutions designed to propel your business into the future</p>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Future-proof websites and applications built with cutting-edge technologies and responsive design principles.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Solutions</h3>
+                    <p>Custom AI implementations that learn, adapt, and evolve with your business needs.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cyber Security</h3>
+                    <p>Advanced security protocols to protect your digital assets in an increasingly connected world.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable cloud infrastructure and services to optimize performance and reduce operational costs.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Applications</h3>
+                    <p>Cross-platform mobile apps that deliver seamless user experiences across all devices.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analytics</h3>
+                    <p>Transform raw data into actionable insights with our advanced analytics and visualization tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section id="portfolio-preview" class="compact-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Explore our groundbreaking projects that are shaping the future across various industries</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="0">
+                    <img src="public\b88c868f-4675-43fe-a8d4-c0e506145bea.jpg" alt="Quantum Finance Platform">
+                    <div class="portfolio-overlay">
+                        <h3>Quantum Finance Platform</h3>
+                        <p>Revolutionary financial platform leveraging quantum computing for real-time risk analysis.</p>
+                        <a href="portfolio.html" class="btn" style="margin-top: 15px;">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="public\cyberpunk-illustration-with-neon-colors-futuristic-technology.jpg" alt="Neural Interface">
+                    <div class="portfolio-overlay">
+                        <h3>Neural Interface System</h3>
+                        <p>Brain-computer interface that enables direct neural control of digital systems.</p>
+                        <a href="portfolio.html" class="btn" style="margin-top: 15px;">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="public\medium-shot-man-wearing-vr-glasses.jpg" alt="Holographic Display">
+                    <div class="portfolio-overlay">
+                        <h3>Holographic Display</h3>
+                        <p>Advanced holographic technology for immersive visual experiences without special glasses.</p>
+                        <a href="portfolio.html" class="btn" style="margin-top: 15px;">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="0">
+                    <img src="public\2308941.jpg" alt="Smart City Platform">
+                    <div class="portfolio-overlay">
+                        <h3>Smart City Platform</h3>
+                        <p>Integrated IoT system for managing urban infrastructure and services efficiently.</p>
+                        <a href="portfolio.html" class="btn" style="margin-top: 15px;">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="public\images-that-simulate-x-rays-with-neon-colors.jpg" alt="Healthcare AI">
+                    <div class="portfolio-overlay">
+                        <h3>Healthcare AI System</h3>
+                        <p>AI-powered diagnostic tool that assists medical professionals in accurate diagnosis.</p>
+                        <a href="portfolio.html" class="btn" style="margin-top: 15px;">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="public\person-using-ar-technology-perform-their-occupation-(1).jpg" alt="Autonomous Vehicle">
+                    <div class="portfolio-overlay">
+                        <h3>Autonomous Vehicle System</h3>
+                        <p>Next-generation navigation and control system for self-driving vehicles.</p>
+                        <a href="portfolio.html" class="btn" style="margin-top: 15px;">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Preview -->
+    <section id="team-preview" class="compact-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Experts</h2>
+            <p class="section-subtitle">Our team of visionaries, innovators, and experts working together to shape the future</p>
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="0">
+                    <div class="member-img">
+                        <img src="assets\Alex-512.webp" alt="Team Member">
+                    </div>
+                    <h3>Alex Morgan</h3>
+                    <p>Chief Executive Officer</p>
+                    <p>Visionary leader with 15+ years in tech innovation.</p>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="assets\Sara-512.webp" alt="Team Member">
+                    </div>
+                    <h3>Sarah Chen</h3>
+                    <p>Chief Technology Officer</p>
+                    <p>Quantum computing expert and AI researcher.</p>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-img">
+                        <img src="assets\Marcus-512.webp" alt="Team Member">
+                    </div>
+                    <h3>Marcus Johnson</h3>
+                    <p>Creative Director</p>
+                    <p>Pushing the boundaries of digital design and UX.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Universal CTA Section -->
+<section class="universal-cta particles-section">
+    <div id="particles-js-universal-cta"></div>
+    <div class="container">
+        <div class="cta-content" style="text-align: center; margin: 0 auto;">
+            <h2 data-aos="fade-up" style="text-align: center;">Transform Your Vision Into Reality</h2>
+            <p data-aos="fade-up" data-aos-delay="100" style="text-align: center; margin: 0 auto 40px auto;">Ready to bring your innovative ideas to life? Let's collaborate and create something extraordinary together.</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="#" class="cta-btn cta-primary">Start Your Project</a>
+                <a href="tel:+15551234567" class="cta-btn cta-secondary">View Our Work</a>
+            </div>
+        </div>
+    </div>
+</section>
+   
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-atom"></i>
+                        NEXUS
+                    </a>
+                    <p>Pioneering the future of technology with innovative solutions that transform businesses and enhance human experiences.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">AI Solutions</a></li>
+                        <li><a href="services.html">Cyber Security</a></li>
+                        <li><a href="services.html">Quantum Computing</a></li>
+                        <li><a href="services.html">Immersive Reality</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Future Street, Tech City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@nexusfuture.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Nexus Future. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Nexus Future</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Tilt.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-atom"></i>
+                    NEXUS
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Services Section -->
+    <section id="main-services" class="page-section">
+        <div class="page-header">
+            <h1 class="page-title">Our Services</h1>
+            <p class="page-subtitle">Comprehensive technology solutions designed to propel your business into the future with cutting-edge innovations and strategic implementations.</p>
+        </div>
+        <div class="container">
+            <h2 class="section-title">Core Technology Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Custom AI solutions including predictive analytics, natural language processing, computer vision, and autonomous systems that learn and adapt to your business needs.</p>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>Predictive Analytics</li>
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision Systems</li>
+                        <li>Autonomous Decision Making</li>
+                    </ul>
+                    <a href="contact.html" class="btn" style="margin-top: 20px; display: inline-block;">Learn More</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-computer"></i>
+                    </div>
+                    <h3>Quantum Computing</h3>
+                    <p>Leverage quantum algorithms for optimization, cryptography, and complex simulations that solve problems intractable for classical computers.</p>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>Quantum Optimization</li>
+                        <li>Quantum Cryptography</li>
+                        <li>Molecular Simulation</li>
+                        <li>Financial Modeling</li>
+                    </ul>
+                    <a href="contact.html" class="btn" style="margin-top: 20px; display: inline-block;">Learn More</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>Extended Reality</h3>
+                    <p>Immersive AR, VR, and MR experiences that transform how users interact with digital content, from virtual training to augmented retail.</p>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>Virtual Reality Training</li>
+                        <li>Augmented Reality Retail</li>
+                        <li>Mixed Reality Collaboration</li>
+                        <li>Spatial Computing</li>
+                    </ul>
+                    <a href="contact.html" class="btn" style="margin-top: 20px; display: inline-block;">Learn More</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cyber Security</h3>
+                    <p>Advanced security solutions including quantum-resistant cryptography, blockchain security, and AI-powered threat detection systems.</p>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>Quantum Cryptography</li>
+                        <li>Blockchain Security</li>
+                        <li>AI Threat Detection</li>
+                        <li>Zero Trust Architecture</li>
+                    </ul>
+                    <a href="contact.html" class="btn" style="margin-top: 20px; display: inline-block;">Learn More</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>IoT & Edge Computing</h3>
+                    <p>Connected device ecosystems with real-time data processing at the edge, enabling instant insights and autonomous system responses.</p>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>Smart Device Networks</li>
+                        <li>Edge AI Processing</li>
+                        <li>Real-time Analytics</li>
+                        <li>Autonomous Systems</li>
+                    </ul>
+                    <a href="contact.html" class="btn" style="margin-top: 20px; display: inline-block;">Learn More</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Bio-Digital Interfaces</h3>
+                    <p>Cutting-edge interfaces between biological systems and digital technology, including neural interfaces and genetic computing.</p>
+                    <ul style="text-align: left; margin-top: 15px;">
+                        <li>Neural Interfaces</li>
+                        <li>Genetic Algorithms</li>
+                        <li>Bio-sensor Integration</li>
+                        <li>Health Monitoring Systems</li>
+                    </ul>
+                    <a href="contact.html" class="btn" style="margin-top: 20px; display: inline-block;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="particles-section page-section">
+        <div id="particles-js"></div>
+        <div class="container">
+            <h2 class="section-title">Our Process</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Discovery & Strategy</h3>
+                    <p>We begin by deeply understanding your business challenges and opportunities, developing a comprehensive technology strategy aligned with your goals.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Design & Development</h3>
+                    <p>Our team designs and develops custom solutions using the latest technologies, with iterative prototyping and continuous feedback.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Implementation & Launch</h3>
+                    <p>We manage the complete implementation process, ensuring seamless integration with your existing systems and successful deployment.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Optimization & Support</h3>
+                    <p>Continuous monitoring, optimization, and support to ensure your technology evolves with your business and market demands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Partners Section -->
+    <section id="partners" class="page-section">
+        <div class="container">
+            <h2 class="section-title">Technology Partners</h2>
+            <div class="partners-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px; align-items: center; justify-items: center;">
+                <div class="partner-logo" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fab fa-google" style="font-size: 3rem; color: var(--primary);"></i>
+                    <p>Google Quantum AI</p>
+                </div>
+                <div class="partner-logo" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fab fa-microsoft" style="font-size: 3rem; color: var(--primary);"></i>
+                    <p>Microsoft Azure</p>
+                </div>
+                <div class="partner-logo" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fab fa-aws" style="font-size: 3rem; color: var(--primary);"></i>
+                    <p>Amazon Web Services</p>
+                </div>
+                <div class="partner-logo" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-computer" style="font-size: 3rem; color: var(--primary);"></i>
+                    <p>IBM Quantum</p>
+                </div>
+                <div class="partner-logo" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-microchip" style="font-size: 3rem; color: var(--primary);"></i>
+                    <p>NVIDIA AI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Universal CTA Section -->
+<section class="universal-cta particles-section">
+    <div id="particles-js-universal-cta"></div>
+    <div class="container">
+        <div class="cta-content">
+            <h2 data-aos="fade-up">Ready to Transform Your Business?</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Let's discuss how our cutting-edge services can drive innovation and growth for your organization.</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="contact.html" class="cta-btn cta-primary">Get Started</a>
+                <a href="portfolio.html" class="cta-btn cta-secondary">View Case Studies</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-atom"></i>
+                        NEXUS
+                    </a>
+                    <p>Pioneering the future of technology with innovative solutions that transform businesses and enhance human experiences.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">AI Solutions</a></li>
+                        <li><a href="services.html">Cyber Security</a></li>
+                        <li><a href="services.html">Quantum Computing</a></li>
+                        <li><a href="services.html">Immersive Reality</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Future Street, Tech City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@nexusfuture.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Nexus Future. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

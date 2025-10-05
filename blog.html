@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Nexus Future</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Tilt.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-atom"></i>
+                    NEXUS
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+   
+    <!-- Featured Post -->
+    <section id="featured-post" class="page-section">
+        <div class="page-header">
+            <h1 class="page-title">Future Insights</h1>
+            <p class="page-subtitle">Exploring the cutting edge of technology, AI, quantum computing, and the future of human-computer interaction.</p>
+        </div><div class="container">
+            <div class="blog-card featured" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; background: var(--card-bg); border-radius: 15px; overflow: hidden;">
+                <div class="blog-image" style="height: 400px;">
+                    <img src="public\6560471.jpg" alt="Quantum AI" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="blog-content" style="padding: 40px;">
+                    <span class="featured-badge">FEATURED</span>
+                    <h2 style="margin: 15px 0;">The Quantum AI Revolution: What's Next?</h2>
+                    <p style="margin-bottom: 20px;">Exploring how quantum computing is set to transform artificial intelligence, enabling breakthroughs in drug discovery, climate modeling, and complex system optimization.</p>
+                    <div class="blog-meta">
+                        <span><i class="far fa-user"></i> Dr. Sarah Chen</span>
+                        <span><i class="far fa-clock"></i> 10 min read</span>
+                        <span><i class="far fa-calendar"></i> March 15, 2024</span>
+                    </div>
+                    <a href="#" class="btn" style="margin-top: 20px;">Read Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section id="blog-grid" class="page-section">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="blog-image">
+                        <img src="public\cyberpunk-illustration-with-neon-colors-futuristic-technology.jpg" alt="Neural Interfaces">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Neural Interfaces: The Future of Human-Computer Interaction</h3>
+                        <p>How brain-computer interfaces are revolutionizing everything from medical rehabilitation to creative expression and communication.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Alex Morgan</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <a href="#" class="btn" style="margin-top: 15px; display: inline-block;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <img src="public\images-that-simulate-x-rays-with-neon-colors.jpg" alt="AI in Healthcare">
+                    </div>
+                    <div class="blog-content">
+                        <h3>AI in Healthcare: Revolutionizing Diagnosis and Treatment</h3>
+                        <p>Exploring how artificial intelligence is transforming medical imaging, drug discovery, and personalized treatment plans.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Dr. Michael Chen</span>
+                            <span><i class="far fa-clock"></i> 12 min read</span>
+                        </div>
+                        <a href="#" class="btn" style="margin-top: 15px; display: inline-block;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="public\1095.jpg" alt="Quantum Security">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Quantum Cryptography: The End of Digital Eavesdropping</h3>
+                        <p>How quantum key distribution is creating unbreakable encryption and what it means for the future of digital security.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Maria Rodriguez</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <a href="#" class="btn" style="margin-top: 15px; display: inline-block;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image">
+                        <img src="public\2308941.jpg" alt="Smart Cities">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Smart Cities 2.0: The Role of AI and IoT in Urban Planning</h3>
+                        <p>How artificial intelligence and internet of things are creating more efficient, sustainable, and livable urban environments.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> James Wilson</span>
+                            <span><i class="far fa-clock"></i> 10 min read</span>
+                        </div>
+                        <a href="#" class="btn" style="margin-top: 15px; display: inline-block;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="blog-image">
+                        <img src="public\programming-background-collage.jpg" alt="Extended Reality">
+                    </div>
+                    <div class="blog-content">
+                        <h3>The Metaverse: Beyond Hype to Practical Applications</h3>
+                        <p>Exploring real-world business applications of extended reality beyond gaming and social media.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Lisa Thompson</span>
+                            <span><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                        <a href="#" class="btn" style="margin-top: 15px; display: inline-block;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="blog-image">
+                        <img src="public\ai-nuclear-energy-background-future-innovation-disruptive-technology.jpg" alt="Ethical AI">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Ethical AI: Building Responsible Artificial Intelligence Systems</h3>
+                        <p>The importance of ethics in AI development and how to create systems that are fair, transparent, and accountable.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> Dr. Sarah Chen</span>
+                            <span><i class="far fa-clock"></i> 9 min read</span>
+                        </div>
+                        <a href="#" class="btn" style="margin-top: 15px; display: inline-block;">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="particles-section page-section">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="hero-content" style="text-align: center;">
+                <h2 data-aos="fade-up">Stay Updated with Future Insights</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Subscribe to our newsletter for the latest updates on emerging technologies, industry trends, and expert analysis.</p>
+                <form class="newsletter-form" data-aos="fade-up" data-aos-delay="200" style="max-width: 500px; margin: 30px auto; display: flex; gap: 10px;">
+                    <input type="email" class="form-control" placeholder="Enter your email" style="flex: 1;">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   <!-- Universal CTA Section -->
+<section class="universal-cta particles-section">
+    <div id="particles-js-universal-cta"></div>
+    <div class="container">
+        <div class="cta-content">
+            <h2 data-aos="fade-up">Want to Contribute?</h2>
+            <p data-aos="fade-up" data-aos-delay="100">We're always looking for thought leaders and experts to share their insights on emerging technologies.</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="contact.html" class="cta-btn cta-primary">Write for Us</a>
+                <a href="team.html" class="cta-btn cta-secondary">Meet Our Editors</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-atom"></i>
+                        NEXUS
+                    </a>
+                    <p>Pioneering the future of technology with innovative solutions that transform businesses and enhance human experiences.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">AI & Machine Learning</a></li>
+                        <li><a href="#">Quantum Computing</a></li>
+                        <li><a href="#">Extended Reality</a></li>
+                        <li><a href="#">Cyber Security</a></li>
+                        <li><a href="#">Emerging Tech</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Future Street, Tech City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@nexusfuture.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Nexus Future. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
